@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My App Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- TOP HEADER -->
+<div class="top-bar">
+    <h2>My Portfolio</h2>
+</div>
+
+<!-- APP CONTAINER -->
+<div class="app">
+
+    <!-- HOME -->
+    <section id="home" class="page active">
+        <div class="card home-card">
+
+            <img src="mitch2.jfif" class="avatar">
+
+            <h1>Michia Agraan</h1>
+            <p class="tag">WELCOME TO MY PERSONAL SPACE</p>
+
+            <div class="info">
+                <p>🎂 20 years old</p>
+                <p>📍 Bacsay, Luna, Apayao</p>
+                <p>📞 0995-496-0680</p>
+            </div>
+
+            <div class="quote">
+                "Dream big, work hard, and stay focused."
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="page">
+
+        <div class="card">
+            <h2>About Me</h2>
+
+            <p>
+                I am Michcia Agraan, a person who expresses love, faith, and identity through music,
+                kindness, and genuine connections. I believe in compassion, understanding, and creating
+                a space where everyone feels valued.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- CALENDAR -->
+    <section id="calendar" class="page">
+
+        <div class="card">
+            <h2>Birthday Calendar</h2>
+
+            <div class="calendar">
+                <div class="month">June 2005</div>
+
+                <div class="grid">
+                    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+
+                    <div></div><div></div><div></div><div></div><div></div><div></div><div>1</div>
+                    <div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div>
+                    <div>9</div><div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div>
+
+                    <div class="highlight">16</div>
+
+                    <div>17</div><div>18</div><div>19</div><div>20</div><div>21</div><div>22</div><div>23</div>
+                    <div>24</div><div>25</div><div>26</div><div>27</div><div>28</div><div>29</div><div>30</div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="page">
+
+        <div class="card">
+            <h2>Education</h2>
+
+            <div class="edu">
+                <img src="elementary.jpg">
+                <div>
+                    <h3>Elementary</h3>
+                    <p>Bacsay Elementary School</p>
+                    <p>2011 - 2017</p>
+                </div>
+            </div>
+
+            <div class="edu">
+                <img src="school.jfif">
+                <div>
+                    <h3>High School</h3>
+                    <p>Bac-Da National High School</p>
+                    <p>2018 - 2022</p>
+                </div>
+            </div>
+
+            <div class="edu">
+                <img src="high school.jfif">
+                <div>
+                    <h3>Senior High</h3>
+                    <p>Bac-Da National High School</p>
+                    <p>2022 - 2024</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<!-- BOTTOM NAVIGATION (APP STYLE) -->
+<div class="bottom-nav">
+    <button onclick="showPage('home')">🏠</button>
+    <button onclick="showPage('about')">👤</button>
+    <button onclick="showPage('calendar')">📅</button>
+    <button onclick="showPage('education')">🎓</button>
+</div>
+
+<script>
+function showPage(pageId) {
+    let pages = document.querySelectorAll(".page");
+    pages.forEach(p => p.classList.remove("active"));
+
+    document.getElementById(pageId).classList.add("active");
+}
+</script>
+
+</body>
+</html>
