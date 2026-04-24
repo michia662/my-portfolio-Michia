@@ -48,6 +48,36 @@ body {
     color: gray;
 }
 
+/* My Skills */
+#skills {
+    padding: 30px;
+    text-align: center;
+}
+
+#skills .card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#skills h2 {
+    margin-bottom: 15px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    background: #f2f2f2;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 10px;
+    }
 /* EDUCATION */
 .edu {
     display: flex;
